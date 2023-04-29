@@ -9,6 +9,10 @@
 
 2. 기능
 
+<img src="src/assets/Todo관리.png">
+
+<img src="src/assets/진행상황.png">
+
 - Todo-List 작성
 
 - 완료된 List 체크 및 전체 체크
