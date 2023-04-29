@@ -1,0 +1,44 @@
+.title {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icons {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.barWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.progressBar {
+  width: 35rem;
+  height: 1.5rem;
+  background-color: black;
+  border-radius: 10px;
+  margin-right: 8px;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  height: 1.5rem;
+  background-color: pink;
+  border-radius: 10px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: bold;
+  gap: 7px;
+}
+
+.commentColor {
+  color: hotpink;
+}

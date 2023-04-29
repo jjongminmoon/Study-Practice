@@ -1,0 +1,60 @@
+.deadlineContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.text {
+  background-color: pink;
+  width: 80px;
+  padding-left: 7px;
+  padding-bottom: 3px;
+  margin-right: 5px;
+  border-radius: 30px;
+}
+
+.inputContainer {
+  display: flex;
+  flex: 1;
+}
+
+.deadline {
+  width: 14rem;
+  border: 2px solid #c0c0c0;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.warning {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.warningIcon {
+  font-size: 20px;
+}
+
+.title {
+  flex: 1;
+  font-size: 15px;
+  padding: 12px;
+  border: 2px solid #c0c0c0;
+  border-right: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.button {
+  padding: 0 16px;
+  padding-top: 4px;
+  background-color: pink;
+  color: white;
+  border: 2px solid pink;
+  border-left: 0;
+  font-weight: bold;
+  font-size: 18px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+}

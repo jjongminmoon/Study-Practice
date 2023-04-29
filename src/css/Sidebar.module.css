@@ -1,0 +1,16 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 180px;
+  padding: 20px;
+  background-color: pink;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
