@@ -2,7 +2,6 @@ import styles from "../css/ListItem.module.css";
 import { useTodoDispatch } from "../context/TodoProvider";
 import { BsCheckCircle } from "react-icons/bs";
 import { IoIosRemoveCircleOutline } from "react-icons/io";
-import { today } from "../Today";
 
 export interface ListItemProps {
   id: number;
@@ -41,9 +40,7 @@ export default function ListItem(props: ListItemProps) {
       <span className={[styles.text, props.isChecked ? styles.lineThrough : ""].join(" ")}>
         {props.text}
       </span>
-      <span className={styles.deadline}>
-        {today} ~ {props.date}
-      </span>
+      <span className={styles.deadline}>{props.date}</span>
       <IoIosRemoveCircleOutline className={styles.removeIcon} onClick={handleRemoveButton} />
     </li>
   );

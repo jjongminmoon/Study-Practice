@@ -79,7 +79,7 @@ export default function TodoInput() {
       <div className={styles.deadlineContainer}>
         <div className={styles.text}>Deadline : </div>
         <input
-          placeholder="Enter a Deadline. (YYYYMMDD)"
+          placeholder="Enter the EndDate. (YYYYMMDD)"
           value={dateState.date}
           onChange={handleEndDateChange}
           className={styles.deadline}
