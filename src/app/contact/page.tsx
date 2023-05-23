@@ -1,5 +1,11 @@
 import ContactForm from "@/components/ContactForm";
+import { Metadata } from "next";
 import { SiGithub, SiTistory, SiNotion } from "react-icons/si";
+
+export const metadata: Metadata = {
+  title: "Contact Me",
+  description: "MJ에게 메일 보내기"
+};
 
 const SNS = [
   { url: "www.naver.com", icon: <SiGithub /> },

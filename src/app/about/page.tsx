@@ -1,4 +1,10 @@
 import Profile from "@/components/Profile";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Me",
+  description: "MJ의 커리어 소개"
+};
 
 export default function AboutPage() {
   const TITLE_CLASS = "font-bold text-xl my-2";
