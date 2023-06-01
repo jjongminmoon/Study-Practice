@@ -19,10 +19,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <header className="sticky top-0 bg-white z-10 border-b">
             <Navbar />
           </header>
-          <main className="px-20">
+          <main className="px-60 bg-neutral-50 min-h-screen">
             <SWRConfigContext>{children}</SWRConfigContext>
           </main>
         </AuthContext>
+        <div id="portal" />
       </body>
     </html>
   );

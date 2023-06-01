@@ -9,7 +9,7 @@ export default function Avatar({ image, size, highlight }: Props) {
     <div className={getAvatarStyle(size, highlight)}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        className={`bg-white rounded-full p-[0.1rem] ${getImageSizeStyle(size)}`}
+        className={`bg-white object-cover rounded-full ${getImageSizeStyle(size)}`}
         src={image ?? undefined}
         alt="User Profile"
         referrerPolicy="no-referrer"
@@ -23,11 +23,11 @@ function getAvatarStyle(size: string, highlight: boolean): string {
   const highlightStyle = highlight
     ? "bg-gradient-to-bl from-fuchsia-600 via-rose-500 to-amber-300"
     : "";
-  const sizeStyle = size === "small" ? "w-9 h-9" : "w-[68px] h-[68px]";
+  const sizeStyle = size === "small" ? "w-[37px] h-[37px]" : "w-[69px] h-[69px]";
 
   return `${baseStyle} ${highlightStyle} ${sizeStyle}`;
 }
 
 function getImageSizeStyle(size: string): string {
-  return size === "small" ? "w-[34px] h-[34px] p-[0.1rem]" : "w-16 h-16 p-[0.2rem]";
+  return size === "small" ? "w-[34px] h-[34px] p-[0.1rem]" : "w-16 h-16 p-[3.2px]";
 }

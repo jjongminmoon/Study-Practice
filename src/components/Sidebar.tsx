@@ -9,10 +9,10 @@ export default function Sidebar({ user: { name, image, username } }: Props) {
   return (
     <>
       <div className="flex items-center">
-        {image && <Avatar image={image} size="big" highlight={true} />}
+        {image && <Avatar image={image} size="big" highlight={false} />}
         <div className="ml-4">
           <p className="font-bold">{username}</p>
-          <p className="w-full text-xs text-neutral-500 leading-4">{name}</p>
+          <p className="w-full text-xs text-neutral-500 leading-4 truncate">{name}</p>
         </div>
       </div>
       <p className="text-sm text-neutral-500 mt-8">
