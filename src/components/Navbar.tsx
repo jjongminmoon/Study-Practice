@@ -24,7 +24,7 @@ export default function Header() {
   const user = session?.user;
 
   return (
-    <section className="flex justify-between items-center h-20 shadow-md px-20">
+    <section className="flex justify-between items-center h-20 px-20">
       <Link href="/">
         <h1 className="text-2xl font-bold">Instagram</h1>
       </Link>

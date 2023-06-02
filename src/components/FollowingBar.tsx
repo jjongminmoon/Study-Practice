@@ -4,17 +4,17 @@ import Link from "next/link";
 import useSWR from "swr";
 import Avatar from "./Avatar";
 import ScrollableBar from "./ui/ScrollableBar";
-import { DetailUser } from "@/model/user";
+import { HomeUser } from "@/model/user";
 import { FadeLoader } from "react-spinners";
 
 export default function FollowingBar() {
-  const { data, isLoading, error } = useSWR<DetailUser>("/api/me");
+  const { data, isLoading, error } = useSWR<HomeUser>("/api/me");
   // const users = data?.following;
   // const users = undefined;
   const users = data?.following && [...data?.following, ...data?.following, ...data?.following];
 
   return (
-    <section className="w-full flex justify-center items-center p-4 shadow-sm shadow-neutral-300 mb-4 m-0 rounded-lg min-h-[120px] overflow-x-auto">
+    <section className="w-full flex justify-center items-center p-4 shadow-sm shadow-neutral-300 mb-4 m-0 rounded-lg min-h-[120px] overflow-x-auto relative z-0">
       {isLoading ? (
         <FadeLoader height={15} width={5} color="pink" />
       ) : (
