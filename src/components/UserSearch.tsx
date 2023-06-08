@@ -4,8 +4,9 @@ import { SearchUser } from "@/model/user";
 import { FormEvent, useState } from "react";
 import useSWR from "swr";
 import FadeSpinner from "./ui/FadeLoader";
-import UserCard from "./userCard";
+
 import useDebounce from "@/hooks/debounce";
+import UserCard from "./userCard";
 
 export default function UserSearch() {
   const [keyword, setKeyword] = useState("");

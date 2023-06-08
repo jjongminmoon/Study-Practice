@@ -10,8 +10,8 @@ export default function UserProfile({ user }: Props) {
   const { image, username, name, following, followers, posts } = user;
   const info = [
     { title: "posts", data: posts },
-    { title: "following", data: following },
-    { title: "followers", data: followers }
+    { title: "followers", data: followers },
+    { title: "following", data: following }
   ];
 
   return (

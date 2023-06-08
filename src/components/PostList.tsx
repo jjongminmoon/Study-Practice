@@ -1,12 +1,11 @@
 "use client";
 
-import useSWR from "swr";
-import PostListCart from "./PostListCart";
 import FadeSpinner from "./ui/FadeLoader";
-import { SimplePost } from "@/model/post";
+import PostListCard from "./PostListCard";
+import usePosts from "@/hooks/posts";
 
 export default function PostList() {
-  const { data: posts, isLoading } = useSWR<SimplePost[]>("/api/posts");
+  const { posts, isLoading } = usePosts();
 
   return (
     <section>
@@ -19,7 +18,7 @@ export default function PostList() {
         <ul>
           {posts.map((post, index) => (
             <li key={post.id} className="mb-4">
-              <PostListCart post={post} priority={index < 2} />
+              <PostListCard post={post} priority={index < 2} />
             </li>
           ))}
         </ul>

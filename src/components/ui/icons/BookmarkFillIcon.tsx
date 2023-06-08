@@ -1,5 +1,9 @@
-import { RiBookMarkFill } from "react-icons/ri";
+import { RiBookmarkFill } from "react-icons/ri";
 
-export default function BookmarkFillIcon() {
-  return <RiBookMarkFill className="w-6 h-6" />;
+type Props = {
+  className?: string;
+};
+
+export default function BookmarkFillIcon({ className }: Props) {
+  return <RiBookmarkFill className={className || "w-6 h-6"} />;
 }
