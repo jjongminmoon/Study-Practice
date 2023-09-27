@@ -1,0 +1,14 @@
+.nav {
+  border: 2px solid pink;
+  padding: 16px;
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.nav a {
+  padding: 0 8px;
+}
+
+.product {
+  padding: 16px;
+}
