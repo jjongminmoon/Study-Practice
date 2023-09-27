@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.record {
+  width: 230px;
+  margin: 0 auto;
+  padding-right: 20px;
+}
